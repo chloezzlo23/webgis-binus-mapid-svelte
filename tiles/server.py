@@ -2,7 +2,8 @@ import sqlite3
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-MBTILES = Path(__file__).resolve().parent.parent.parent / "data_mvt" / "suppliers.mbtiles"
+DATA_MVT = Path(__file__).resolve().parents[2] / "data_mvt"
+MBTILES = DATA_MVT / "suppliers.mbtiles"
 HOST = "0.0.0.0"
 PORT = 8080
 TILE_CONTENT_TYPE = "application/vnd.mapbox-vector-tile"
