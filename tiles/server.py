@@ -2,7 +2,7 @@ import sqlite3
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-DATA_MVT = Path(__file__).resolve().parents[2] / "data_mvt"
+DATA_MVT = Path(__file__).resolve().parents[1] / "data_mvt"
 MBTILES = DATA_MVT / "suppliers.mbtiles"
 HOST = "0.0.0.0"
 PORT = 8080
